@@ -39,19 +39,52 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #one {
   display: flex;
   justify-content: center;
-  height: 10vw;
-  width: 10vw;
-}
-
-#one,
-#two {
+  align-items: center;
+  height: 33vw;
+  width: 33vw;
 }
 
 
 @media screen and (min-width: 600px) {
+  #content{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-start; 
+  }
+  
+  #one,
+  #two {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    height: 49vw;
+    width: 49vw;
+  }
+
+  #three {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    order: 1;
+    height: 50vw;
+    width: 100vw;
+  }
 
 }
 
 @media screen and (min-width: 800px) {
-
+  #content{
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+  
+  #one,
+  #two,
+  #three {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    height: 33vw;
+    width: 33vw;
+  }
 }
